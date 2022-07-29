@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Ferreteria Acero</string>
+    <string name="toolbar_title">Ferreteria Acero</string>
+    //REGISTRO
+    <string name="register_app_name">Cliente Nuevo</string>
+    <string name="register_title">Registro</string>
+    <string name="register_input_hint_fullName">Fullname</string>
+    <string name="register_fullName_input_content_description_end_icon">Fullname</string>
+    <string name="register_fullName_input_hint">Nombres</string>
+    <string name="register_nickname_input_hint">Apellidos</string>
+    <string name="register_nickname_input_content_description_end_icon">Nickname</string>
+    <string name="register_phoneNumber_input_hint">Teléfono</string>
+    <string name="register_phoneNumber_input_content_description_end_icon">Phone Number</string>
+    <string name="register_email_input_hint">E-mail</string>
+    <string name="register_email_input_content_description_end_icon">email</string>
+    <string name="register_password_input_hint">Contraseña</string>
+    <string name="register_password_input_content_description_end_icon">Password</string>
+
+    //LOGIN
+    <string name="login_app_name">¡Bienvenido!</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="login_email_input_hint">E-mail</string>
+    <string name="login_email_input_content_description_end_icon">email</string>
+    <string name="login_password_input_hint">Contraseña</string>
+    <string name="login_password_input_content_description_end_icon">Password</string>
+
+</resources>

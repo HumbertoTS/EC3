@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+    <include
+        layout="@layout/toolbar_custom" />
+
+
+    <LinearLayout
+        android:id="@+id/bienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a Ferretería Acero"
+            android:textStyle="bold"
+            android:textSize="38dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/josefinsansbolditalic"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fotolayout"
+        android:layout_width="383dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/marco_perfilehome"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenido"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/fotoperfil"
+            android:layout_width="137dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:layout_width="216dp"
+            android:layout_height="70dp"
+            android:fontFamily="@font/abrilfatface_normal"
+            android:gravity="center"
+            android:text="Mickey Vargas Rodriguez"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/abrilfatface_normal"
+        android:text="Productos Destacados"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/fotolayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <fragment
+        android:id="@+id/fragmentproducto"
+        android:name="com.example.ec3.ProductoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/fragment_producto"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
